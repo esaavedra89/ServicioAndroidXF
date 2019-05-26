@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServiceXF.LongRunningPage">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand">
+
+            <Label 
+                HorizontalTextAlignment="Center"
+                Text="Iniciamos el servicio en Android"
+                TextColor="White"/>
+
+            <Button
+                BackgroundColor="DarkGray"
+                Text="start long running task"
+                TextColor="White"
+                x:Name="longRunningTask"/>
+
+            <Label 
+                HorizontalTextAlignment="Center"
+                Text="Finalizamos el servicio en Android"
+                TextColor="White"/>
+            
+            <Button
+                BackgroundColor="DarkGray"
+                Text="stop long running task"
+                TextColor="White"
+                x:Name="stopLongRunningTask"/>
+
+            <Label
+                
+                FontAttributes="Bold"
+                FontSize="Large"
+                TextColor="White"
+                x:Name="ticker"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
